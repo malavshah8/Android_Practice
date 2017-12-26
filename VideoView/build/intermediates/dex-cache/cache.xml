@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/malavshah/Downloads/VideoView/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/malavshah/Downloads/VideoView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.2.0_b6d9bb832776a9142f9d4b50d4036ee6ff2e3f14/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/malavshah/Downloads/VideoView/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="/Users/malavshah/Downloads/VideoView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.2.0_d830e575627d3f1881333c84a9f8dda1d15a6fbe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/malavshah/Downloads/VideoView/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="/Users/malavshah/Downloads/VideoView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.2.0_9e7762667cb6cc1bfb331b959ffa15fd9ab8c219/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/malavshah/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/Users/malavshah/Downloads/VideoView/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.2.0_a036c8514409c7577cc38b922e7e64e53435a4e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/malavshah/Downloads/VideoView/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/malavshah/Downloads/VideoView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.2.0_beede3baca9dba4ded0fc870d821a7f0ee786258/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/malavshah/Downloads/VideoView/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/malavshah/Downloads/VideoView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.2.0_3dd828813f58037127b72263e794c547374b992b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/malavshah/Downloads/VideoView/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/malavshah/Downloads/VideoView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.2.0_42c3ca0d329e603b44f4a708a6110294374b112b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/malavshah/Downloads/VideoView/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/malavshah/Downloads/VideoView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.2.0_09d584f8a50ed4ce21722a6ac20d88980763adcb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/malavshah/Downloads/VideoView/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1fd5e95d1a665f552646718dc222bab1e7490771">
+        <dex dex="/Users/malavshah/Downloads/VideoView/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8f2a40d2f3ae09ffc88bafd2113db684675c2e41/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/malavshah/Downloads/VideoView/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cca24f0adc3e23336055ff5f344f57d1a8443992">
+        <dex dex="/Users/malavshah/Downloads/VideoView/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d17f59db8ca8c1e2288c248bbe7e01c9e5e737fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/malavshah/Downloads/VideoView/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/malavshah/Downloads/VideoView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.2.0_87561775d07c6d3fe8e18459358d029704598415/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/malavshah/Downloads/VideoView/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="/Users/malavshah/Downloads/VideoView/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.2.0_929df7ceb3b6f9e6c6374b4647365c1e0ea06bde/classes.dex" />
+    </item>
+
+</items>
