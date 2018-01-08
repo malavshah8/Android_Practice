@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8f5e9"
+    tools:context="com.example.malavshah.registrationuidesign.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:padding="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to My App"
+            android:textSize="30sp"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Material Design Demo UI for Android. Registration Page."
+            android:textSize="16sp"
+            android:textColor="@color/textColor"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="128dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/birdlogo1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:background="@null"
+            android:paddingBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="number"
+            android:maxLength="2"
+            android:drawableLeft="@drawable/ic_face_black_24dp"
+            android:drawablePadding="10dp"
+            android:background="@null"
+            android:paddingBottom="20dp"
+            android:paddingTop="3dp"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:inputType="phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:digits="0123456789"
+            android:maxLength="10"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawablePadding="10dp"
+            android:background="@null"
+            android:paddingBottom="20dp"/>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Birthday"
+            android:clickable="true"
+            android:editable="false"
+            android:hint="Date"
+            android:drawableLeft="@drawable/temp"
+            android:drawablePadding="10dp"
+            android:background="@null"
+            android:paddingBottom="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:clickable="true"
+            android:hint="Postal Address"
+            android:drawablePadding="10dp"
+            android:background="@null"
+            android:paddingBottom="20dp"
+            android:inputType="textPostalAddress"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"/>
+
+    </LinearLayout>
+</LinearLayout>
