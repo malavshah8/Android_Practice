@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -30,7 +35,7 @@
             android:textColor="@color/textColor"/>
 
     </LinearLayout>
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -40,13 +45,15 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:weightSum="1">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginLeft="128dp"
+                android:layout_width="58dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="140dp"
                 android:layout_marginBottom="20dp"
+                android:layout_gravity=""
                 android:background="@drawable/birdlogo1" />
         </LinearLayout>
 
@@ -90,6 +97,46 @@
             android:paddingBottom="20dp"
             android:paddingTop="3dp"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="18sp"
+            android:paddingBottom="20dp"
+            android:paddingTop="3dp"
+            android:drawableLeft="@drawable/ic_wc_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000"/>
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginRight="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+
+        </RadioGroup>
+
+        </LinearLayout>
+
         <EditText
             android:id="@+id/phone"
             android:inputType="phone"
@@ -123,9 +170,37 @@
             android:hint="Postal Address"
             android:drawablePadding="10dp"
             android:background="@null"
-            android:paddingBottom="20dp"
+            android:paddingBottom="15dp"
             android:inputType="textPostalAddress"
             android:drawableLeft="@drawable/ic_location_on_black_24dp"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_contacts_black_24dp"
+            android:paddingRight="10dp"
+            android:paddingTop="13dp"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:popupBackground="@color/colorPrimary">
+        </Spinner>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="10dp"/>
+
     </LinearLayout>
 </LinearLayout>
+</ScrollView>

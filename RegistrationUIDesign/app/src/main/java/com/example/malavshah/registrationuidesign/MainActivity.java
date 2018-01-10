@@ -4,8 +4,10 @@ import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -16,13 +18,24 @@ public class MainActivity extends AppCompatActivity {
 
     EditText edittext;
     Calendar myCalendar;
+    EditText 
+   // private RadioGroup radioSexGroup;
+  //  private RadioButton radioSexButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        myCalendar = Calendar.getInstance();
+        //Spinner
+        Spinner mySpinner = (Spinner) findViewById(R.id.spinner);
 
+        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,
+                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.times));
+        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        mySpinner.setAdapter(myAdapter);
+
+        //Calendar
+        myCalendar = Calendar.getInstance();
         edittext= (EditText) findViewById(R.id.Birthday);
         final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
 
