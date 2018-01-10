@@ -43,19 +43,13 @@
         android:padding="30dp"
         android:weightSum="1">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="1">
 
-            <ImageView
-                android:layout_width="58dp"
-                android:layout_height="61dp"
-                android:layout_marginLeft="140dp"
-                android:layout_marginBottom="20dp"
-                android:layout_gravity=""
-                android:background="@drawable/birdlogo1" />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="61dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/birdlogo1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,7 +66,8 @@
             android:drawableLeft="@drawable/ic_person_black_24dp"
             android:drawablePadding="10dp"
             android:background="@null"
-            android:paddingBottom="20dp"/>
+            android:paddingBottom="20dp"
+            android:imeOptions="actionDone"/>
 
             <EditText
                 android:id="@+id/lastName"
@@ -121,17 +116,19 @@
                 android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/radiobutton"
+                android:id="@+id/radio_male"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Male"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginRight="10dp"
+                android:imeOptions="actionDone"/>
 
             <RadioButton
-                android:id="@+id/radiobutton1"
+                android:id="@+id/radio_female"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Female"/>
+                android:text="Female"
+                android:imeOptions="actionDone"/>
 
         </RadioGroup>
 
@@ -186,7 +183,7 @@
             android:paddingTop="13dp"/>
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="20dp"
             android:popupBackground="@color/colorPrimary">
@@ -194,6 +191,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/button"
             android:layout_width="150dp"
             android:layout_height="40dp"
             android:text="Submit"
