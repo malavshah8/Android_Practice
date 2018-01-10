@@ -2,6 +2,7 @@ package com.example.malavshah.registrationuidesign;
 
 import android.app.DatePickerDialog;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -126,7 +127,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean validate(){
         boolean valid = true;
         if(firstname.isEmpty()){
-            et_firstname.setError("Please enter valid first name!");
+            //et_firstname.setError("Please enter valid first name!");
+            Drawable dr = getResources().getDrawable(R.drawable.ic_error_black_24dp);
+            //add an error icon to yur drawable files
+            dr.setBounds(0, 0, dr.getIntrinsicWidth(), dr.getIntrinsicHeight());
+            et_firstname.setError("Please enter valid first name!", dr);
             valid = false;
         }
         if(lastname.isEmpty()){
