@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">RegistrationUIDesign</string>
+    <string name="register_yes">Confirm</string>
+    <string name="register_no">No</string>
+
 </resources>

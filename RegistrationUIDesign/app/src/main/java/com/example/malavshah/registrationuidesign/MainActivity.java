@@ -1,10 +1,13 @@
 package com.example.malavshah.registrationuidesign;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
@@ -120,47 +123,48 @@ public class MainActivity extends AppCompatActivity {
         if (!validate()) {
             Toast.makeText(this, "Signup has failed!", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(this, "Signup successful", Toast.LENGTH_LONG).show();
+            showDialog();
         }
+            //Toast.makeText(this, "Signup successful", Toast.LENGTH_LONG).show()
     }
 
     public boolean validate(){
+        Drawable dr = getResources().getDrawable(R.drawable.ic_error_black_24dp);
+        //add an error icon to yur drawable files
+        dr.setBounds(0, 0, dr.getIntrinsicWidth(), dr.getIntrinsicHeight());
         boolean valid = true;
         if(firstname.isEmpty()){
             //et_firstname.setError("Please enter valid first name!");
-            Drawable dr = getResources().getDrawable(R.drawable.ic_error_black_24dp);
-            //add an error icon to yur drawable files
-            dr.setBounds(0, 0, dr.getIntrinsicWidth(), dr.getIntrinsicHeight());
             et_firstname.setError("Please enter valid first name!", dr);
             valid = false;
         }
         if(lastname.isEmpty()){
-            et_lastname.setError("Please enter valid last name!");
+            et_lastname.setError("Please enter valid last name!", dr);
             valid = false;
         }
         if(age.isEmpty()){
-            et_age.setError("Please enter valid age!");
+            et_age.setError("Please enter valid age!", dr);
             valid = false;
         }
         if(phone.isEmpty() || phone.length()<10){
-            et_phone.setError("Please enter valid phone number!");
+            et_phone.setError("Please enter valid phone number!",dr);
             valid = false;
         }
         if(address.isEmpty()){
-            et_address.setError("Please enter valid postal address!");
+            et_address.setError("Please enter valid postal address!", dr);
             valid = false;
         }
-        if(date.isEmpty()){
-            et_date.setError("Please select date!");
+        /*if(date.isEmpty()){
+            et_date.setError("Please select date!", dr);
             valid = false;
-        }
+        }*/
         if(rg_gender.getCheckedRadioButtonId() == -1){
-            male.setError("Please select your gender!");
+            male.setError("Please select your gender!", dr);
             valid = false;
         }
         if(mySpinner.getSelectedItemId()<=0){
             TextView errorText = (TextView)mySpinner.getSelectedView();
-            errorText.setError("Please select some value");
+            errorText.setError("Please select some value", dr);
             errorText.setTextColor(Color.RED);//just to highlight that this is an error
             //errorText.setText("my actual error text");
             valid = false;
@@ -177,6 +181,27 @@ public class MainActivity extends AppCompatActivity {
         gender = rg_gender.getCheckedRadioButtonId();
         date = et_date.getText().toString();
         //Log.i("Info", date);
+    }
+
+    public void showDialog(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        // Get the layout inflater
+        LayoutInflater inflater = (MainActivity.this).getLayoutInflater();
+        builder.setView(inflater.inflate(R.layout.alertdialog, null))
+                // Add action buttons
+                .setPositiveButton(R.string.register_yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        Toast.makeText(MainActivity.this, "Yes", Toast.LENGTH_LONG).show();
+                    }
+                })
+                .setNegativeButton(R.string.register_no, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Toast.makeText(MainActivity.this, "No", Toast.LENGTH_LONG).show();
+                    }
+                });
+        builder.create();
+        builder.show();
     }
 
 }

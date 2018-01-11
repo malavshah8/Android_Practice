@@ -148,7 +148,7 @@
             android:paddingBottom="20dp"/>
 
         <EditText
-            android:layout_width="150dp"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:id="@+id/Birthday"
             android:clickable="true"
