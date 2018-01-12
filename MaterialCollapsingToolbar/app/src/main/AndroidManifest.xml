@@ -15,6 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".BikeActivity" />
+        <activity android:name=".CarActivity" />
+        <activity android:name=".FlightActivity" />
+        <activity android:name=".BoatActivity" />
+        <activity android:name=".BusActivity"></activity>
     </application>
 
 </manifest>

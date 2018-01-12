@@ -1,4 +1,4 @@
-package com.example.malavshah.imageslider;
+package com.example.malavshah.myapplication;
 
 import org.junit.Test;
 

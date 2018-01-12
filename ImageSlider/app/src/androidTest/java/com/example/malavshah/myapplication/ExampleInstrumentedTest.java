@@ -1,4 +1,4 @@
-package com.example.malavshah.imageslider;
+package com.example.malavshah.myapplication;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.malavshah.imageslider", appContext.getPackageName());
+        assertEquals("com.example.malavshah.myapplication", appContext.getPackageName());
     }
 }
