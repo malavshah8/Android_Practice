@@ -1,23 +1,17 @@
 package com.example.malavshah.googlemapsstyles;
 
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
-import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-
-
-import android.os.Handler;
-import android.os.SystemClock;
-import android.view.animation.BounceInterpolator;
-import android.view.animation.Interpolator;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -57,9 +51,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(home).title("My Home").snippet("Address: 33 Nelson Avenue")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.birdlogo2)));
         mMap.addMarker(new MarkerOptions().position(school).title("School").snippet("Stevens Institute of Technology")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.birdlogo2)));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.oie_2)));
         mMap.addMarker(new MarkerOptions().position(js).title("Journal Square")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.birdlogo2)));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.oie_2)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(home, 13));
 
         LatLng park = new LatLng(40.7463031,-74.0604744);
